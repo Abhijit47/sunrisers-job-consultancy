@@ -1,6 +1,6 @@
+import CircleText from '@/components/elements/CircleText';
 import VideoPopup from '@/components/elements/VideoPopup';
 import Link from 'next/link';
-import CircleText from '../../../components/elements/CircleText';
 
 export default function About() {
   return (
@@ -57,7 +57,7 @@ export default function About() {
                   </p>
                   <ul className='list-style-one mb_40 clearfix'>
                     <li>3+ Years Experience</li>
-                    <li>200+ Successful Placements</li>
+                    <li>300+ Successful Placements</li>
                     <li>Career-Focused Support</li>
                   </ul>
                 </div>

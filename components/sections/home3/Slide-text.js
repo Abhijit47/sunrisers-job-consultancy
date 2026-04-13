@@ -1,66 +1,17 @@
-'use client'
-import React from 'react'
+import { tags } from '@/constants';
 
-export default function Slide_Text(){
+export default function Slide_Text() {
+  const tripleCopy = [...tags, ...tags, ...tags];
 
-    return (
-    <> 
-       <div className="slide-text alternat-2">
-            <div className="text-inner">
-                <ul className="text-list">
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                    <li>Warehouse</li>
-                    <li>Hospitality</li>
-                    <li>Manufacturing</li>
-                    <li>Special Events</li>
-                    <li>General Labor</li>
-                </ul>
-            </div>
-        </div>
-    </>
-  )
+  return (
+    <div className='slide-text alternat-2 pt_120'>
+      <div className='text-inner'>
+        <ul className='text-list'>
+          {tripleCopy.map((tag, index) => (
+            <li key={index}>{tag}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
 }

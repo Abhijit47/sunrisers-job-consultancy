@@ -20,12 +20,14 @@ import Category3 from '@/components/sections/home3/Category';
 import Chooseus3 from '@/components/sections/home3/Chooseus';
 import Clients3 from '@/components/sections/home3/Clients';
 // import Download3 from '@/components/sections/home3/Download';
-import Dueal3 from '@/components/sections/home3/Dueal';
+// import Dueal3 from '@/components/sections/home3/Dueal';
+import Dueal from '@/components/sections/home2/Dueal';
 import Industries3 from '@/components/sections/home3/Industries';
 import News3 from '@/components/sections/home3/News';
 import Slide_Text3 from '@/components/sections/home3/Slide-text';
 import Testimonial3 from '@/components/sections/home3/Testimonial';
-import Welcome3 from '@/components/sections/home3/Welcome';
+import Process4 from '@/components/sections/home4/Process';
+// import Welcome3 from '@/components/sections/home3/Welcome';
 
 export default function Home() {
   return (
@@ -38,10 +40,12 @@ export default function Home() {
         <Category3 />
         {/* <Download3 /> */}
         <Industries3 />
-        <Welcome3 />
+        {/* <Welcome3 /> */}
         <Slide_Text3 />
         <Testimonial3 />
-        <Dueal3 />
+        <Dueal />
+        <Process4 />
+        {/* <Dueal3 /> */}
         <News3 />
         <Apps3 />
 

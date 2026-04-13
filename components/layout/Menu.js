@@ -31,10 +31,10 @@ export default function Menu() {
           <Link href='/about'>About</Link>
         </li>
         <li>
-          <Link href='/service'>Solutions</Link>
+          <Link href='/service'>Services</Link>
         </li>
         <li>
-          <Link href='/job-4'>Job Apply</Link>
+          <Link href='/job-apply'>Job Apply</Link>
         </li>
         {/* <li className='dropdown'>
           <Link href='/#'>Solutions</Link>
