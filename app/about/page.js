@@ -12,306 +12,11 @@ export default function About_Page() {
         <About />
         <Clients />
 
-        <section className='chooseus-section alternat-3 pt_120 pb_90'>
-          <div
-            className='pattern-layer'
-            style={{
-              backgroundImage: 'url(assets/images/shape/shape-23.png)',
-            }}></div>
-          <div className='auto-container'>
-            <div className='sec-title light centred pb_60 sec-title-animation animation-style2'>
-              <span className='sub-title mb_10 title-animation'>Why Us</span>
-              <h2 className='title-animation'>Why Choose Us</h2>
-            </div>
-            <div className='inner-container'>
-              <div className='row clearfix'>
-                <div className='col-lg-4 col-md-6 col-sm-12 chooseus-block'>
-                  <div className='chooseus-block-one'>
-                    <div className='inner-box'>
-                      <div className='icon-box'>
-                        <i className='icon-4'></i>
-                      </div>
-                      <h3>
-                        <Link href='/'>Retain Top Talent</Link>
-                      </h3>
-                      <p>
-                        Providing clear career paths and growth opportunities is
-                        key to retaining top talent.
-                      </p>
-                      <div className='link'>
-                        <Link href='/'>
-                          Learn More<i className='icon-7'></i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-lg-4 col-md-6 col-sm-12 chooseus-block'>
-                  <div className='chooseus-block-one'>
-                    <div className='inner-box'>
-                      <div className='icon-box'>
-                        <i className='icon-5'></i>
-                      </div>
-                      <h3>
-                        <Link href='/'>Stay Compliant</Link>
-                      </h3>
-                      <p>
-                        Educate employees about compliance requirements through
-                        regular training
-                      </p>
-                      <div className='link'>
-                        <Link href='/'>
-                          Learn More<i className='icon-7'></i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-lg-4 col-md-6 col-sm-12 chooseus-block'>
-                  <div className='chooseus-block-one'>
-                    <div className='inner-box'>
-                      <div className='icon-box'>
-                        <i className='icon-6'></i>
-                      </div>
-                      <h3>
-                        <Link href='/'>Improve Employee</Link>
-                      </h3>
-                      <p>
-                        Invest in employee training and development programs to
-                        enhance skills and knowledge.
-                      </p>
-                      <div className='link'>
-                        <Link href='/'>
-                          Learn More<i className='icon-7'></i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <WhyChooseUs />
 
-        <section className='industries-style-four pt_120 pb_90'>
-          <div className='auto-container'>
-            <div className='sec-title centred pb_60 sec-title-animation animation-style2'>
-              <span className='sub-title mb_10 title-animation'>
-                Industries
-              </span>
-              <h2 className='title-animation'>Industries Served</h2>
-            </div>
-            <div className='row clearfix'>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-9'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Hotel</Link>
-                    </h3>
-                    <p>2853 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-10'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Hospitality</Link>
-                    </h3>
-                    <p>2256 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-11'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Kitchen</Link>
-                    </h3>
-                    <p>1408 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-12'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Retail</Link>
-                    </h3>
-                    <p>1740 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-13'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Events</Link>
-                    </h3>
-                    <p>3948 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-14'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Labor</Link>
-                    </h3>
-                    <p>2984 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-15'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Driving</Link>
-                    </h3>
-                    <p>4509 Staffs</p>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-                <div className='industries-block-two'>
-                  <div className='inner-box'>
-                    <div className='icon-box'>
-                      <i className='icon-16'></i>
-                    </div>
-                    <h3>
-                      <Link href='/'>Caretaker</Link>
-                    </h3>
-                    <p>1039 Staffs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ServedIndustries />
 
-        <section className='team-section z_1 centred pt_0 pb_0'>
-          <div className='auto-container'>
-            <div className='sec-title pb_60 sec-title-animation animation-style2'>
-              <span className='sub-title mb_10 title-animation'>Our Team</span>
-              <h2 className='title-animation'>Meet The Team</h2>
-            </div>
-            <div className='row clearfix'>
-              <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
-                <div
-                  className='team-block-one wow fadeInUp animated'
-                  data-wow-delay='00ms'
-                  data-wow-duration='1500ms'>
-                  <div className='inner-box'>
-                    <div className='image-box'>
-                      <figure className='image'>
-                        <img src='assets/images/team/team-1.jpg' alt='' />
-                      </figure>
-                      <figure className='overlay-image'>
-                        <img src='assets/images/team/team-1.jpg' alt='' />
-                      </figure>
-                    </div>
-                    <div className='lower-content'>
-                      <h3>
-                        <Link href='/'>Tom Oliver</Link>
-                      </h3>
-                      <span className='designation'>Founder</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
-                <div
-                  className='team-block-one wow fadeInUp animated'
-                  data-wow-delay='200ms'
-                  data-wow-duration='1500ms'>
-                  <div className='inner-box'>
-                    <div className='image-box'>
-                      <figure className='image'>
-                        <img src='assets/images/team/team-2.jpg' alt='' />
-                      </figure>
-                      <figure className='overlay-image'>
-                        <img src='assets/images/team/team-2.jpg' alt='' />
-                      </figure>
-                    </div>
-                    <div className='lower-content'>
-                      <h3>
-                        <Link href='/'>Loenard Barnes</Link>
-                      </h3>
-                      <span className='designation'>Lead Engineer</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
-                <div
-                  className='team-block-one wow fadeInUp animated'
-                  data-wow-delay='400ms'
-                  data-wow-duration='1500ms'>
-                  <div className='inner-box'>
-                    <div className='image-box'>
-                      <figure className='image'>
-                        <img src='assets/images/team/team-3.jpg' alt='' />
-                      </figure>
-                      <figure className='overlay-image'>
-                        <img src='assets/images/team/team-3.jpg' alt='' />
-                      </figure>
-                    </div>
-                    <div className='lower-content'>
-                      <h3>
-                        <Link href='/'>Gilbert Sherman</Link>
-                      </h3>
-                      <span className='designation'>Sale Manager</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
-                <div
-                  className='team-block-one wow fadeInUp animated'
-                  data-wow-delay='600ms'
-                  data-wow-duration='1500ms'>
-                  <div className='inner-box'>
-                    <div className='image-box'>
-                      <figure className='image'>
-                        <img src='assets/images/team/team-4.jpg' alt='' />
-                      </figure>
-                      <figure className='overlay-image'>
-                        <img src='assets/images/team/team-4.jpg' alt='' />
-                      </figure>
-                    </div>
-                    <div className='lower-content'>
-                      <h3>
-                        <Link href='/'>Franklin Bailey</Link>
-                      </h3>
-                      <span className='designation'>Art Director</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <OurTeams />
 
         {/* <section className='testimonial-style-two pt_120 pb_120'>
           <div
@@ -438,5 +143,345 @@ export default function About_Page() {
         <Subscribe />
       </Layout>
     </div>
+  );
+}
+
+function WhyChooseUs() {
+  return (
+    <section className='chooseus-section alternat-3 pt_120 pb_90'>
+      <div
+        className='pattern-layer'
+        style={{
+          backgroundImage: 'url(assets/images/shape/shape-23.png)',
+        }}></div>
+      <div className='auto-container'>
+        <div className='sec-title light centred pb_60 sec-title-animation animation-style2'>
+          <span className='sub-title mb_10 title-animation'>Why Us</span>
+          <h2 className='title-animation'>Why Choose Us</h2>
+        </div>
+        <div className='inner-container'>
+          <div className='row clearfix'>
+            <div className='col-lg-4 col-md-6 col-sm-12 chooseus-block'>
+              <div className='chooseus-block-one'>
+                <div className='inner-box'>
+                  <div className='icon-box'>
+                    <i className='icon-4'></i>
+                  </div>
+                  <h3>
+                    <Link href='#'>Our Hiring Process</Link>
+                  </h3>
+                  <p>We follow a structured recruitment approach:</p>
+                  <ul className='list-group list-group-flush'>
+                    <li className='list-group-item'>
+                      Understanding Client Requirements
+                    </li>
+                    <li className='list-group-item'>
+                      Sourcing & Shortlisting Candidates
+                    </li>
+                    <li className='list-group-item'>Screening & Interviews</li>
+                    <li className='list-group-item'>Final Selection & Offer</li>
+                    <li className='list-group-item'>Post-Placement Support</li>
+                  </ul>
+                  <div className='link mt-3'>
+                    <Link href='#'>
+                      Learn More<i className='icon-7'></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12 chooseus-block'>
+              <div className='chooseus-block-one'>
+                <div className='inner-box'>
+                  <div className='icon-box'>
+                    <i className='icon-5'></i>
+                  </div>
+                  <h3>
+                    <Link href='/'>Why Sunrisers?</Link>
+                  </h3>
+                  <p>
+                    Connecting job seekers with opportunities and businesses
+                    with strong teams.
+                  </p>
+                  <ul className='list-group list-group-flush'>
+                    <li className='list-group-item'>
+                      Fast & Efficient Hiring Process
+                    </li>
+                    <li className='list-group-item'>
+                      Experienced Recruitment Team
+                    </li>
+                    <li className='list-group-item'>
+                      Wide Talent Network Across India
+                    </li>
+                    <li className='list-group-item'>
+                      Cost-Effective Staffing Solutions
+                    </li>
+                    <li className='list-group-item'>
+                      Support for Clients & Candidates
+                    </li>
+                  </ul>
+                  <div className='link mt-3'>
+                    <Link href='/'>
+                      Learn More<i className='icon-7'></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='col-lg-4 col-md-6 col-sm-12 chooseus-block'>
+              <div className='chooseus-block-one'>
+                <div className='inner-box'>
+                  <div className='icon-box'>
+                    <i className='icon-6'></i>
+                  </div>
+                  <h3>
+                    <Link href='/'>Our Hiring Process</Link>
+                  </h3>
+                  <p>We follow a structured recruitment approach:</p>
+                  <ul className='list-group list-group-flush'>
+                    <li className='list-group-item'>Personalized Approach</li>
+                    <li className='list-group-item'>Fast & Efficient Hiring</li>
+                    <li className='list-group-item'>Wide Industry Network</li>
+                    <li className='list-group-item'>Expert Guidance</li>
+                    <li className='list-group-item'>Trusted by Clients</li>
+                  </ul>
+                  <div className='link mt-3'>
+                    <Link href='/'>
+                      Learn More<i className='icon-7'></i>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ServedIndustries() {
+  return (
+    <section className='industries-style-four pt_120 pb_90'>
+      <div className='auto-container'>
+        <div className='sec-title centred pb_60 sec-title-animation animation-style2'>
+          <span className='sub-title mb_10 title-animation'>Industries</span>
+          <h2 className='title-animation'>Industries Served</h2>
+        </div>
+        <div className='row clearfix'>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-9'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Hotel</Link>
+                </h3>
+                <p>2853 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-10'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Hospitality</Link>
+                </h3>
+                <p>2256 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-11'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Kitchen</Link>
+                </h3>
+                <p>1408 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-12'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Retail</Link>
+                </h3>
+                <p>1740 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-13'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Events</Link>
+                </h3>
+                <p>3948 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-14'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Labor</Link>
+                </h3>
+                <p>2984 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-15'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Driving</Link>
+                </h3>
+                <p>4509 Staffs</p>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+            <div className='industries-block-two'>
+              <div className='inner-box'>
+                <div className='icon-box'>
+                  <i className='icon-16'></i>
+                </div>
+                <h3>
+                  <Link href='/'>Caretaker</Link>
+                </h3>
+                <p>1039 Staffs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function OurTeams() {
+  return (
+    <section className='team-section z_1 centred pt_0 pb_0'>
+      <div className='auto-container'>
+        <div className='sec-title pb_60 sec-title-animation animation-style2'>
+          <span className='sub-title mb_10 title-animation'>Our Team</span>
+          <h2 className='title-animation'>Meet The Team</h2>
+        </div>
+        <div className='row clearfix'>
+          <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
+            <div
+              className='team-block-one wow fadeInUp animated'
+              data-wow-delay='00ms'
+              data-wow-duration='1500ms'>
+              <div className='inner-box'>
+                <div className='image-box'>
+                  <figure className='image'>
+                    <img src='assets/images/team/team-1.jpg' alt='' />
+                  </figure>
+                  <figure className='overlay-image'>
+                    <img src='assets/images/team/team-1.jpg' alt='' />
+                  </figure>
+                </div>
+                <div className='lower-content'>
+                  <h3>
+                    <Link href='/'>Tom Oliver</Link>
+                  </h3>
+                  <span className='designation'>Founder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
+            <div
+              className='team-block-one wow fadeInUp animated'
+              data-wow-delay='200ms'
+              data-wow-duration='1500ms'>
+              <div className='inner-box'>
+                <div className='image-box'>
+                  <figure className='image'>
+                    <img src='assets/images/team/team-2.jpg' alt='' />
+                  </figure>
+                  <figure className='overlay-image'>
+                    <img src='assets/images/team/team-2.jpg' alt='' />
+                  </figure>
+                </div>
+                <div className='lower-content'>
+                  <h3>
+                    <Link href='/'>Loenard Barnes</Link>
+                  </h3>
+                  <span className='designation'>Lead Engineer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
+            <div
+              className='team-block-one wow fadeInUp animated'
+              data-wow-delay='400ms'
+              data-wow-duration='1500ms'>
+              <div className='inner-box'>
+                <div className='image-box'>
+                  <figure className='image'>
+                    <img src='assets/images/team/team-3.jpg' alt='' />
+                  </figure>
+                  <figure className='overlay-image'>
+                    <img src='assets/images/team/team-3.jpg' alt='' />
+                  </figure>
+                </div>
+                <div className='lower-content'>
+                  <h3>
+                    <Link href='/'>Gilbert Sherman</Link>
+                  </h3>
+                  <span className='designation'>Sale Manager</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='col-lg-3 col-md-6 col-sm-12 team-block'>
+            <div
+              className='team-block-one wow fadeInUp animated'
+              data-wow-delay='600ms'
+              data-wow-duration='1500ms'>
+              <div className='inner-box'>
+                <div className='image-box'>
+                  <figure className='image'>
+                    <img src='assets/images/team/team-4.jpg' alt='' />
+                  </figure>
+                  <figure className='overlay-image'>
+                    <img src='assets/images/team/team-4.jpg' alt='' />
+                  </figure>
+                </div>
+                <div className='lower-content'>
+                  <h3>
+                    <Link href='/'>Franklin Bailey</Link>
+                  </h3>
+                  <span className='designation'>Art Director</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

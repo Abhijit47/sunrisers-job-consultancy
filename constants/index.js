@@ -62,11 +62,11 @@ export const services = [
   },
   {
     id: crypto.randomUUID(),
-    title: 'Outsourced Recruitment (RPO)',
+    title: 'Outsourced Recruitment',
     description:
-      'Don’t have time or resources to manage hiring? Let us handle it.',
+      "Don't have time or resources to manage hiring? Let us handle it. We streamline your recruitment process.",
     features: [
-      'End-to-End Recruitment Process Outsourcing',
+      'Recruitment Process Outsourcing',
       'Candidate Sourcing & Screening',
       'Interview Coordination',
       'Hiring Process Management',
@@ -77,7 +77,7 @@ export const services = [
     id: crypto.randomUUID(),
     title: 'Bulk Hiring Solutions',
     description:
-      'We specialize in bulk hiring services for companies with large workforce requirements.',
+      'Comprehensive bulk hiring services for companies and organizations.',
     features: [
       'Mass Hiring Campaigns',
       'Campus Recruitment Support',
@@ -88,7 +88,7 @@ export const services = [
   },
   {
     id: crypto.randomUUID(),
-    title: 'Candidate Screening & Assessment',
+    title: 'Screening & Assessment',
     description: 'We ensure that only the best candidates reach you.',
     features: [
       'Skill-Based Screening',
@@ -107,7 +107,7 @@ export const services = [
       'BPO & KPO',
       'Sales & Marketing',
       'Finance & Accounts',
-      'Logistics & Operations',
+      // 'Logistics & Operations',
     ],
     info: 'Our wide industry network allows us to deliver the right talent faster.',
   },

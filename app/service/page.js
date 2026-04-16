@@ -14,7 +14,26 @@ export default function Service_Page() {
               <span className='sub-title mb_10 title-animation'>
                 What We Provide
               </span>
-              <h2 className='title-animation'>Inspiring Staffing Solutions</h2>
+              <h2 className='title-animation'>
+                Professional Recruitment & Staffing Solutions
+              </h2>
+              <p className='title-animation mt-3'>
+                At <strong>Sunrisers Job Consultancy</strong>, we offer
+                end-to-end{' '}
+                <strong>recruitment and staffing solutions in India</strong>{' '}
+                designed to connect the right talent with the right opportunity.{' '}
+                <br />
+                Our services are tailored to meet the hiring needs of startups,
+                SMEs, and large enterprises while helping job seekers achieve
+                their career goals.
+              </p>
+              <p className='title-animation mt-3'>
+                We focus on delivering{' '}
+                <strong>
+                  fast, reliable, and cost-effective hiring solutions
+                </strong>{' '}
+                through a structured and result-driven approach.
+              </p>
             </div>
             <div className='row clearfix'>
               {services.map((service) => (
@@ -67,13 +86,13 @@ export default function Service_Page() {
                           ))}
                         </ul>
 
-                        <p>{service.info}</p>
+                        {/* <p>{service.info}</p> */}
 
-                        {/* <div className='btn-box'>
+                        <div className='btn-box'>
                           <Link href='#' className='theme-btn btn-one'>
-                            View Details
+                            Know More
                           </Link>
-                        </div> */}
+                        </div>
                       </div>
                     </div>
                   </div>

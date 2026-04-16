@@ -16,12 +16,18 @@ export default function Chooseus() {
                   <i className='icon-4'></i>
                 </div>
                 <h3>
-                  <Link href='#'>Proven Results & Experience</Link>
+                  <Link href='#'>Who We Are</Link>
                 </h3>
                 <p>
-                  With 3+ years of expertise and 200+ successful placements, we
-                  deliver real career growth opportunities across IT and Non-IT
-                  sectors.
+                  Sunrisers Job Consultancy is a growing{' '}
+                  <strong>
+                    recruitment and staffing solutions provider in India
+                  </strong>
+                  , dedicated to helping job seekers find meaningful careers and
+                  helping companies hire the right talent efficiently. With a
+                  team of experienced recruiters and HR professionals, we bring
+                  deep industry knowledge and personalized support to every
+                  client and candidate.
                 </p>
                 <div className='link'>
                   <Link href='#'>
@@ -38,11 +44,16 @@ export default function Chooseus() {
                   <i className='icon-5'></i>
                 </div>
                 <h3>
-                  <Link href='#'>Trusted & Verified Opportunities</Link>
+                  <Link href='#'>Our Mission</Link>
                 </h3>
                 <p>
-                  We connect you with genuine, verified companies, ensuring
-                  safe, reliable, and quality job placements.
+                  <strong>
+                    To bridge the gap between talent and opportunity by
+                    providing reliable, fast, and quality recruitment solutions.
+                  </strong>{' '}
+                  We aim to empower job seekers with the right career guidance
+                  while enabling businesses to build strong, high-performing
+                  teams.
                 </p>
                 <div className='link'>
                   <Link href='#'>
@@ -59,12 +70,13 @@ export default function Chooseus() {
                   <i className='icon-6'></i>
                 </div>
                 <h3>
-                  <Link href='#'>Complete Career Support</Link>
+                  <Link href='#'>Our Vision</Link>
                 </h3>
                 <p>
-                  From career guidance to resume building and interview
-                  preparation, we support you at every step until you get
-                  placed.
+                  To become one of the most trusted and preferred{' '}
+                  <strong>job consultancies in India</strong>, known for
+                  delivering quality recruitment services and building long-term
+                  relationships with clients and candidates.
                 </p>
                 <div className='link'>
                   <Link href='#'>
