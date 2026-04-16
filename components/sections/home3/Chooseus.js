@@ -23,11 +23,8 @@ export default function Chooseus() {
                   <strong>
                     recruitment and staffing solutions provider in India
                   </strong>
-                  , dedicated to helping job seekers find meaningful careers and
-                  helping companies hire the right talent efficiently. With a
-                  team of experienced recruiters and HR professionals, we bring
-                  deep industry knowledge and personalized support to every
-                  client and candidate.
+                  , helping job seekers find careers and companies hire talent
+                  efficiently with experienced recruiters.
                 </p>
                 <div className='link'>
                   <Link href='#'>
@@ -51,9 +48,8 @@ export default function Chooseus() {
                     To bridge the gap between talent and opportunity by
                     providing reliable, fast, and quality recruitment solutions.
                   </strong>{' '}
-                  We aim to empower job seekers with the right career guidance
-                  while enabling businesses to build strong, high-performing
-                  teams.
+                  We empower job seekers with career guidance and enable
+                  businesses to build high-performing teams.
                 </p>
                 <div className='link'>
                   <Link href='#'>
