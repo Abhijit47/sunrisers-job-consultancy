@@ -48,9 +48,9 @@ export default function Contact_Page() {
                       </div>
                       <h4>Phone Number</h4>
                       <p>
-                        <Link href='tel:+919380532329'>+91 9380532329</Link>
+                        <Link href='tel:+919110632329'>+91 9110632329</Link>
                         <br />
-                        <Link href='tel:+919845732329'>+91 9845732329</Link>
+                        <Link href='tel:+919739932329'>+91 9739932329</Link>
                       </p>
                     </div>
                   </div>

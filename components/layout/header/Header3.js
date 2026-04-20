@@ -1,4 +1,3 @@
-'use client';
 import Link from 'next/link';
 // import CustomSelect from '../../elements/CustomSelect';
 import Menu from '../Menu';
@@ -12,9 +11,9 @@ const options = [
 ];
 
 export default function Header3({ scroll, handleMobileMenu, handlePopup }) {
-  const handleSelectChange = (selectedOption) => {
-    console.log('Select', selectedOption);
-  };
+  // const handleSelectChange = (selectedOption) => {
+  //   console.log('Select', selectedOption);
+  // };
 
   return (
     <>
@@ -22,7 +21,7 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }) {
 
       <header
         className={`main-header header-style-three ${scroll ? 'fixed-header' : ''}`}>
-        <div className='header-top'>
+        {/* <div className='header-top'>
           <div className='auto-container'>
             <div className='top-inner'>
               <ul className='info'>
@@ -43,12 +42,12 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }) {
                 </li>
               </ul>
               <div className='right-column'>
-                {/* <div className='language-picker mr_30'>
+                <div className='language-picker mr_30'>
                   <CustomSelect
                     options={options}
                     onChange={handleSelectChange}
                   />
-                </div> */}
+                </div>
                 <ul className='social-links'>
                   <li>
                     <span>Share:</span>
@@ -77,7 +76,7 @@ export default function Header3({ scroll, handleMobileMenu, handlePopup }) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className='header-lower'>
           <div className='auto-container'>

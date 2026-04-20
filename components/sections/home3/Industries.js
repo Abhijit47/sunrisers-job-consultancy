@@ -1,5 +1,80 @@
 import Link from 'next/link';
 
+const industries = [
+  {
+    id: crypto.randomUUID(),
+    name: 'Information Technology (IT)',
+    staffCount: 2853,
+    icon: 'icon-9',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Non-IT',
+    staffCount: 2256,
+    icon: 'icon-10',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Corporate',
+    staffCount: 1408,
+    icon: 'icon-11',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Engineering & Manufacturing',
+    staffCount: 1740,
+    icon: 'icon-12',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Banking, Financial Services & Insurance (BFSI)',
+    staffCount: 3948,
+    icon: 'icon-13',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Healthcare, Medical & Hospitals',
+    staffCount: 2984,
+    icon: 'icon-14',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Retail & E-commerce',
+    staffCount: 4509,
+    icon: 'icon-15',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'BPO / KPO / Customer Support',
+    staffCount: 1039,
+    icon: 'icon-12',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Construction & Real Estate',
+    staffCount: 1039,
+    icon: 'icon-11',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Travel, Hospitality & Aviation',
+    staffCount: 1039,
+    icon: 'icon-10',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Sales, Marketing & Digital Marketing',
+    staffCount: 1039,
+    icon: 'icon-15',
+  },
+  {
+    id: crypto.randomUUID(),
+    name: 'Logistics & Supply Chain',
+    staffCount: 1039,
+    icon: 'icon-1',
+  },
+];
+
 export default function Industries() {
   return (
     <section className='industries-style-three centred pt_120 pb_120'>
@@ -14,14 +89,31 @@ export default function Industries() {
           <h2 className='title-animation'>Industries Served</h2>
         </div>
         <div className='row clearfix'>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
+          {industries.map((industry) => (
+            <div
+              className='col-lg-3 col-md-6 col-sm-12 industries-block'
+              key={industry.id}>
+              <div className='industries-block-three'>
+                <div className='inner-box'>
+                  <div className='icon-box'>
+                    <i className={industry.icon}></i>
+                  </div>
+                  <h3>
+                    <Link href='/'>{industry.name}</Link>
+                  </h3>
+                  <p>{industry.staffCount} Staffs</p>
+                </div>
+              </div>
+            </div>
+          ))}
+          {/* <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
             <div className='industries-block-three'>
               <div className='inner-box'>
                 <div className='icon-box'>
                   <i className='icon-9'></i>
                 </div>
                 <h3>
-                  <Link href='/'>Hotel</Link>
+                  <Link href='/'>Information Technology (IT)</Link>
                 </h3>
                 <p>2853 Staffs</p>
               </div>
@@ -117,7 +209,7 @@ export default function Industries() {
                 <p>1039 Staffs</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='more-btn'>
           <Link href='/' className='theme-btn btn-one'>
