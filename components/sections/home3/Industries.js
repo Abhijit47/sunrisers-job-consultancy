@@ -1,77 +1,132 @@
+'use client';
+
 import Link from 'next/link';
+import { BiSupport } from 'react-icons/bi';
+import { BsBank2, BsShop } from 'react-icons/bs';
+import { CiHospital1 } from 'react-icons/ci';
+import { FaTruckFast } from 'react-icons/fa6';
+import { IoBarChartOutline, IoDesktopOutline } from 'react-icons/io5';
+import { LuChartNoAxesCombined } from 'react-icons/lu';
+import {
+  MdOutlineCorporateFare,
+  MdOutlineEngineering,
+  MdOutlineFlightTakeoff,
+  MdOutlineRealEstateAgent,
+} from 'react-icons/md';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+const swiperOptions = {
+  modules: [Autoplay, Pagination, Navigation],
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  grabCursor: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    575: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1199: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1350: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+};
 
 const industries = [
   {
     id: crypto.randomUUID(),
     name: 'Information Technology (IT)',
     staffCount: 2853,
-    icon: 'icon-9',
+    icon: IoDesktopOutline,
   },
   {
     id: crypto.randomUUID(),
     name: 'Non-IT',
     staffCount: 2256,
-    icon: 'icon-10',
+    icon: IoBarChartOutline,
   },
   {
     id: crypto.randomUUID(),
     name: 'Corporate',
     staffCount: 1408,
-    icon: 'icon-11',
+    icon: MdOutlineCorporateFare,
   },
   {
     id: crypto.randomUUID(),
     name: 'Engineering & Manufacturing',
     staffCount: 1740,
-    icon: 'icon-12',
+    icon: MdOutlineEngineering,
   },
   {
     id: crypto.randomUUID(),
     name: 'Banking, Financial Services & Insurance (BFSI)',
     staffCount: 3948,
-    icon: 'icon-13',
+    icon: BsBank2,
   },
   {
     id: crypto.randomUUID(),
     name: 'Healthcare, Medical & Hospitals',
     staffCount: 2984,
-    icon: 'icon-14',
+    icon: CiHospital1,
   },
   {
     id: crypto.randomUUID(),
     name: 'Retail & E-commerce',
     staffCount: 4509,
-    icon: 'icon-15',
+    icon: BsShop,
   },
   {
     id: crypto.randomUUID(),
     name: 'BPO / KPO / Customer Support',
     staffCount: 1039,
-    icon: 'icon-12',
+    icon: BiSupport,
   },
   {
     id: crypto.randomUUID(),
     name: 'Construction & Real Estate',
     staffCount: 1039,
-    icon: 'icon-11',
+    icon: MdOutlineRealEstateAgent,
   },
   {
     id: crypto.randomUUID(),
     name: 'Travel, Hospitality & Aviation',
     staffCount: 1039,
-    icon: 'icon-10',
+    icon: MdOutlineFlightTakeoff,
   },
   {
     id: crypto.randomUUID(),
     name: 'Sales, Marketing & Digital Marketing',
     staffCount: 1039,
-    icon: 'icon-15',
+    icon: LuChartNoAxesCombined,
   },
   {
     id: crypto.randomUUID(),
     name: 'Logistics & Supply Chain',
     staffCount: 1039,
-    icon: 'icon-1',
+    icon: FaTruckFast,
   },
 ];
 
@@ -88,7 +143,203 @@ export default function Industries() {
           <span className='sub-title mb_10 title-animation'>Industries</span>
           <h2 className='title-animation'>Industries Served</h2>
         </div>
-        <div className='row clearfix'>
+        <Swiper
+          {...swiperOptions}
+          // className='tab-btns tab-buttons tab-btn-carousel'
+        >
+          {industries.map((industry) => (
+            <SwiperSlide key={industry.id}>
+              <div className='industries-block' key={industry.id}>
+                <div className='industries-block-three'>
+                  <div className='inner-box'>
+                    <div className='icon-box'>
+                      <industry.icon />
+                    </div>
+                    <h3>
+                      <Link href='/'>{industry.name}</Link>
+                    </h3>
+                    <p>{industry.staffCount} Staffs</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+          {/* <SwiperSlide>
+            <div className='testimonial-block-one'>
+              <div className='inner-box'>
+                <div
+                  className='shape'
+                  style={{
+                    backgroundImage: 'url(assets/images/shape/shape-7.png)',
+                  }}></div>
+                <div className='icon-box'>
+                  <img src='assets/images/icons/icon-10.png' alt='' />
+                </div>
+                <div className='author-box'>
+                  <figure className='thumb-box'>
+                    <img
+                      src='assets/images/resource/testimonial-1.png'
+                      alt=''
+                    />
+                  </figure>
+                  <h4>Ashitaka Dai</h4>
+                  <span className='designation'>Art Director</span>
+                </div>
+                <p>
+                  Company and was impressed by the main personalized approach of
+                  their recruitment team. They kept me informed at every stage
+                  and ensured that I had all
+                </p>
+              </div>
+            </div>
+          </SwiperSlide> */}
+          {/* <SwiperSlide>
+            <div className='testimonial-block-one'>
+              <div className='inner-box'>
+                <div
+                  className='shape'
+                  style={{
+                    backgroundImage: 'url(assets/images/shape/shape-7.png)',
+                  }}></div>
+                <div className='icon-box'>
+                  <img src='assets/images/icons/icon-10.png' alt='' />
+                </div>
+                <div className='author-box'>
+                  <figure className='thumb-box'>
+                    <img
+                      src='assets/images/resource/testimonial-2.png'
+                      alt=''
+                    />
+                  </figure>
+                  <h4>Franklin Bailey</h4>
+                  <span className='designation'>Sale Manager</span>
+                </div>
+                <p>
+                  Recently I went through their recruitment process with Jobaway
+                  Company, and I was impressed by how the smooth and efficient
+                  these were.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='testimonial-block-one'>
+              <div className='inner-box'>
+                <div
+                  className='shape'
+                  style={{
+                    backgroundImage: 'url(assets/images/shape/shape-7.png)',
+                  }}></div>
+                <div className='icon-box'>
+                  <img src='assets/images/icons/icon-10.png' alt='' />
+                </div>
+                <div className='author-box'>
+                  <figure className='thumb-box'>
+                    <img
+                      src='assets/images/resource/testimonial-3.png'
+                      alt=''
+                    />
+                  </figure>
+                  <h4>Evan Clement</h4>
+                  <span className='designation'>Mahager, Cypertech</span>
+                </div>
+                <p>
+                  I had a fantastic experience throughout the recruitment
+                  process with Jobaway team. The communication was clear,
+                  interview process was well-organized
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='testimonial-block-one'>
+              <div className='inner-box'>
+                <div
+                  className='shape'
+                  style={{
+                    backgroundImage: 'url(assets/images/shape/shape-7.png)',
+                  }}></div>
+                <div className='icon-box'>
+                  <img src='assets/images/icons/icon-10.png' alt='' />
+                </div>
+                <div className='author-box'>
+                  <figure className='thumb-box'>
+                    <img
+                      src='assets/images/resource/testimonial-1.png'
+                      alt=''
+                    />
+                  </figure>
+                  <h4>Ashitaka Dai</h4>
+                  <span className='designation'>Art Director</span>
+                </div>
+                <p>
+                  Company and was impressed by the main personalized approach of
+                  their recruitment team. They kept me informed at every stage
+                  and ensured that I had all
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='testimonial-block-one'>
+              <div className='inner-box'>
+                <div
+                  className='shape'
+                  style={{
+                    backgroundImage: 'url(assets/images/shape/shape-7.png)',
+                  }}></div>
+                <div className='icon-box'>
+                  <img src='assets/images/icons/icon-10.png' alt='' />
+                </div>
+                <div className='author-box'>
+                  <figure className='thumb-box'>
+                    <img
+                      src='assets/images/resource/testimonial-2.png'
+                      alt=''
+                    />
+                  </figure>
+                  <h4>Franklin Bailey</h4>
+                  <span className='designation'>Sale Manager</span>
+                </div>
+                <p>
+                  Recently I went through their recruitment process with Jobaway
+                  Company, and I was impressed by how the smooth and efficient
+                  these were.
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className='testimonial-block-one'>
+              <div className='inner-box'>
+                <div
+                  className='shape'
+                  style={{
+                    backgroundImage: 'url(assets/images/shape/shape-7.png)',
+                  }}></div>
+                <div className='icon-box'>
+                  <img src='assets/images/icons/icon-10.png' alt='' />
+                </div>
+                <div className='author-box'>
+                  <figure className='thumb-box'>
+                    <img
+                      src='assets/images/resource/testimonial-3.png'
+                      alt=''
+                    />
+                  </figure>
+                  <h4>Evan Clement</h4>
+                  <span className='designation'>Mahager, Cypertech</span>
+                </div>
+                <p>
+                  I had a fantastic experience throughout the recruitment
+                  process with Jobaway team. The communication was clear,
+                  interview process was well-organized
+                </p>
+              </div>
+            </div>
+          </SwiperSlide> */}
+        </Swiper>
+        {/* <div className='row clearfix'>
           {industries.map((industry) => (
             <div
               className='col-lg-3 col-md-6 col-sm-12 industries-block'
@@ -96,7 +347,7 @@ export default function Industries() {
               <div className='industries-block-three'>
                 <div className='inner-box'>
                   <div className='icon-box'>
-                    <i className={industry.icon}></i>
+                    <industry.icon />
                   </div>
                   <h3>
                     <Link href='/'>{industry.name}</Link>
@@ -106,111 +357,7 @@ export default function Industries() {
               </div>
             </div>
           ))}
-          {/* <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-9'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Information Technology (IT)</Link>
-                </h3>
-                <p>2853 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-10'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Hospitality</Link>
-                </h3>
-                <p>2256 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-11'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Kitchen</Link>
-                </h3>
-                <p>1408 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-12'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Retail</Link>
-                </h3>
-                <p>1740 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-13'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Events</Link>
-                </h3>
-                <p>3948 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-14'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Labor</Link>
-                </h3>
-                <p>2984 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-15'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Driving</Link>
-                </h3>
-                <p>4509 Staffs</p>
-              </div>
-            </div>
-          </div>
-          <div className='col-lg-3 col-md-6 col-sm-12 industries-block'>
-            <div className='industries-block-three'>
-              <div className='inner-box'>
-                <div className='icon-box'>
-                  <i className='icon-16'></i>
-                </div>
-                <h3>
-                  <Link href='/'>Caretaker</Link>
-                </h3>
-                <p>1039 Staffs</p>
-              </div>
-            </div>
-          </div> */}
-        </div>
+        </div> */}
         <div className='more-btn'>
           <Link href='/' className='theme-btn btn-one'>
             View All Categories
@@ -220,3 +367,5 @@ export default function Industries() {
     </section>
   );
 }
+
+/* <i className={'icon-1'}></i> */

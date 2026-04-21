@@ -36,6 +36,9 @@ export default function Menu() {
         <li>
           <Link href='/job-apply'>Job Apply</Link>
         </li>
+        <li>
+          <Link href='/blogs'>Blogs</Link>
+        </li>
         {/* <li className='dropdown'>
           <Link href='/#'>Solutions</Link>
           <ul>
@@ -121,7 +124,7 @@ export default function Menu() {
           </ul>
 				</li> */}
 
-        <li className='dropdown'>
+        {/* <li className='dropdown'>
           <Link href='/#'>Blog</Link>
           <ul>
             <li>
@@ -134,7 +137,7 @@ export default function Menu() {
               <Link href='/blog-details'>Blog Details</Link>
             </li>
           </ul>
-        </li>
+        </li> */}
         <li>
           <Link href='/contact'>Contact</Link>
         </li>

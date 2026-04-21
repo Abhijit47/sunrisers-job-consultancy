@@ -1,6 +1,7 @@
 import Layout from '@/components/layout/Layout';
 import Subscribe from '@/components/sections/home2/Subscribe';
-import Testimonial from '@/components/sections/home5/Testimonial';
+import Testimonial from '@/components/sections/home2/Testimonial';
+// import Testimonial2 from '@/components/sections/home5/Testimonial';
 import { services } from '@/constants';
 import Link from 'next/link';
 
@@ -96,7 +97,7 @@ export default function Service_Page() {
           </div>
         </section>
 
-        <section className='dueal-section service-page p_relative pt_110 pb_120'>
+        {/* <section className='dueal-section service-page p_relative pt_110 pb_120'>
           <div className='bg-color'></div>
           <div className='shape'>
             <div className='shape-1'></div>
@@ -144,9 +145,10 @@ export default function Service_Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Testimonial />
+        {/* <Testimonial2 /> */}
         <div className='pb_120'></div>
         <Subscribe />
       </Layout>
