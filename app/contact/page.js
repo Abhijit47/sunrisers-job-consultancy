@@ -1,4 +1,5 @@
 import Layout from '@/components/layout/Layout';
+import ContactForm from '@/components/sections/contact/ContactForm';
 import Subscribe from '@/components/sections/home2/Subscribe';
 import Link from 'next/link';
 
@@ -18,15 +19,18 @@ export default function Contact_Page() {
                         <img src='assets/images/icons/icon-27.png' alt='' />
                       </div>
                       <h4>Corporate Office</h4>
-                      <p>0233 Brisbane Cir. Shiloh, Australia 81063</p>
+                      <p>
+                        #3124, 2nd Floor , Near ESI Hospital, Indiranagar Double
+                        Road, Bangalore - 560 038.
+                      </p>
                     </div>
-                    <div className='single-item'>
+                    {/* <div className='single-item'>
                       <div className='icon-box'>
                         <img src='assets/images/icons/icon-27.png' alt='' />
                       </div>
                       <h4>Main Warehouse</h4>
                       <p>10445 Brisbane Cir. Shiloh, Australia 81063</p>
-                    </div>
+                    </div> */}
                     <div className='single-item'>
                       <div className='icon-box'>
                         <img src='assets/images/icons/icon-28.png' alt='' />
@@ -56,73 +60,7 @@ export default function Contact_Page() {
                   </div>
                 </div>
                 <div className='col-lg-8 col-md-12 col-sm-12 content-column'>
-                  <div className='form-inner'>
-                    <form
-                      method='post'
-                      action='sendemail.php'
-                      id='contact-form'>
-                      <div className='row clearfix'>
-                        <div className='col-lg-6 col-md-6 col-sm-12 form-group'>
-                          <label>
-                            Name <span>*</span>
-                          </label>
-                          <input
-                            type='text'
-                            name='username'
-                            placeholder=''
-                            required
-                          />
-                        </div>
-                        <div className='col-lg-6 col-md-6 col-sm-12 form-group'>
-                          <label>
-                            Phone <span>*</span>
-                          </label>
-                          <input
-                            type='text'
-                            name='phone'
-                            placeholder=''
-                            required
-                          />
-                        </div>
-                        <div className='col-lg-12 col-md-12 col-sm-12 form-group'>
-                          <label>
-                            Email Address <span>*</span>
-                          </label>
-                          <input
-                            type='email'
-                            name='email'
-                            placeholder=''
-                            required
-                          />
-                        </div>
-                        <div className='col-lg-12 col-md-12 col-sm-12 form-group'>
-                          <label>
-                            Subject <span>*</span>
-                          </label>
-                          <input
-                            type='text'
-                            name='subject'
-                            placeholder=''
-                            required
-                          />
-                        </div>
-                        <div className='col-lg-12 col-md-12 col-sm-12 form-group'>
-                          <label>
-                            Write Message <span>*</span>
-                          </label>
-                          <textarea name='message' placeholder=''></textarea>
-                        </div>
-                        <div className='col-lg-12 col-md-12 col-sm-12 form-group message-btn'>
-                          <button
-                            type='submit'
-                            className='theme-btn btn-one'
-                            name='submit-form'>
-                            Send Message
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                  <ContactForm />
                 </div>
               </div>
             </div>
