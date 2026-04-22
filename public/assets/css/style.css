@@ -104,9 +104,18 @@
  ***/
 
 :root {
-  --theme-color: #78eb54;
-  --theme-color-2: #45a735;
-  --secondary-color: #26472b;
+  /* --theme-color: #1c2c9e;
+  --theme-color-2: #2337c6;
+  --secondary-color: #6573d7; */
+  /* --title-color: #eae9e9; */
+
+  --theme-color: #fbd457;
+  --theme-color-2: #c9aa46;
+  --secondary-color: #645523;
+
+  /* --theme-color: #78eb54; */
+  /* --theme-color-2: #45a735; */
+  /* --secondary-color: #26472b; */
   --text-color: #666666;
   --title-color: #111111;
   --text-font: 'Inter', sans-serif;
